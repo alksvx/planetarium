@@ -1,0 +1,44 @@
+.card {
+    width: 32%;
+    margin-left: 1%;
+}
+
+a.link-ease-in-out {
+    display: inline-block;
+    line-height: 1;
+    text-decoration: none; /* Убираем подчеркивание */
+    cursor: pointer;
+}
+a.link-ease-in-out:after {
+    background-color: skyblue; /* Цвет линии при наведении на нее курсора мыши */
+    display: block;
+    content: "";
+    height: 1.5px; /* Высота линии */
+    width: 0%;
+    -webkit-transition: width .7s ease-in-out;
+    -moz--transition: width .7s ease-in-out;
+    transition: width .7s ease-in-out;
+}
+a.link-ease-in-out:hover:after{
+    width: 100%;
+
+}
+a.link-ease-in-out:focus:after {
+    width: 100%;
+}
+
+.img-thumbnail {
+    overflow: hidden;
+    display: inline-block;
+    cursor: pointer;
+}
+     
+img.img-thumbnail {
+    width: 100%;
+    transition: 0.7s all ease-in-out;
+    display: block;
+}
+
+img.img-thumbnail:hover {
+    transform: scale(1.1);
+}
